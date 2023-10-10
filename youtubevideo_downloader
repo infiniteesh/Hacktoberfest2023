@@ -1,0 +1,14 @@
+from pytube import YouTube
+
+
+video_url = 'https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE'
+
+yt = YouTube(video_url)
+
+# Video details
+print("Video Title:", yt.title)
+print("Video Description:", yt.description)
+print("Video Author:", yt.author)
+print("Video Length (in seconds):", yt.length)
+print("Video Views:", yt.views)
+print("Video URL:", yt.watch_url)
